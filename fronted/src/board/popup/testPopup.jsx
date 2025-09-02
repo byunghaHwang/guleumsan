@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import http from '../lib/http'; // 경로는 프로젝트 구조에 맞게
+import http from '../../lib/http'; // 경로는 프로젝트 구조에 맞게
 
 function TestPopup({ onClose }) {
   const [data, setData] = useState('');
