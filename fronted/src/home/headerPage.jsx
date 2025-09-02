@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
 function HeaderPage({toggleSidebar}){
@@ -11,7 +11,11 @@ function HeaderPage({toggleSidebar}){
             <button className="menu-btn" onClick={toggleSidebar}>
                 ☰
             </button>
-            top
+            <div style={{left:'30px', display: 'inline-block', position: 'relative'}}>
+                <Link to="/">home</Link> / 
+                로그인
+            </div>
+            
         </header>
     </>
   )
