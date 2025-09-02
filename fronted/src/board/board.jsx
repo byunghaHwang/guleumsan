@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
+
 import TestPopup from './popup/testPopup';
 
 function Board() {
@@ -9,9 +11,15 @@ function Board() {
 
   return (
     <>
-      <h2>공지사항</h2>
+        <div classNames={'testSt'}>
+            <h2>문의사항</h2>
+        </div>
+        <div classNames={'testSt'}>
+            <button onClick={openModal}>팝업 열기</button>
+        </div>
+      
 
-      <button onClick={openModal}>팝업 열기</button>
+      
 
       {isOpen && <TestPopup onClose={closeModal} />}
     </>

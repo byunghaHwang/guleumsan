@@ -4,7 +4,9 @@ function FooterPage(){
     
     return (
     <>
-        <footer className='footer'>foot</footer>
+        <footer className='footer'>
+        
+        </footer>
     </>
   )
 
