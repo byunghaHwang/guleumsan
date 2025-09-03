@@ -116,6 +116,12 @@ body {
 .main {
     min-height: calc(100vh - 180px);
     width: 100%;
+
+    .mainInner{
+        width: 98%;
+        left: 1%;
+        position: relative;
+    }
 }
 
 /* 푸터 */

@@ -28,11 +28,14 @@ function App() {
                 <div className='body-content'>
                     <SideMenu isOpen={isSidebarOpen} />
                     <div className='main'>
-                        <Routes>
-                            <Route path="/" element={<MainPage />} />
-                            <Route path="/board" element={<Board />} />
-                            <Route path="/employee" element={<EmployeeGrid />} />
-                        </Routes>
+                        <div className='mainInner'>
+                            <Routes>
+                                <Route path="/" element={<MainPage />} />
+                                <Route path="/board" element={<Board />} />
+                                <Route path="/employee" element={<EmployeeGrid />} />
+                            </Routes>
+                        </div>
+                        
                     </div>
                 </div>
                 {/* 화면전환 영역 */}

@@ -1,7 +1,7 @@
 /* 화면 스타일 */
 
-.testSt{
+.bg-white{
     padding: 10px 10px;
     position: relative;
-    left: 20px;
+    width: 100%;
 }
