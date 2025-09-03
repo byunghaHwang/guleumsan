@@ -6,7 +6,7 @@ import FooterPage from './home/footerPage';
 import SideMenu from './home/sideMenu';
 import MainPage from './home/mainPage';
 import Board from './board/board';
-import EmployeeGrid from './employee/EmployeeGrid'; // 직원관리 추가
+import EmployeeGrid from './employee/employeeGrid'; // 직원관리 추가
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
