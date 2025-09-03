@@ -36,14 +36,21 @@ const rows = [
 
 export default function EmployeeGrid() {
   return (
-    <Box sx={{ height: 400, width: "100%" }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5, 10]}
-        checkboxSelection
-      />
-    </Box>
+    <>
+      <div className='title-area'>
+          <h2>직원관리</h2>
+      </div>
+
+      <Box sx={{ height: 400, width: "100%" }}>
+        <DataGrid
+          rows={rows}
+          columns={columns}
+          pageSize={5}
+          rowsPerPageOptions={[5, 10]}
+          checkboxSelection
+        />
+      </Box>
+    </>
+    
   );
 }
