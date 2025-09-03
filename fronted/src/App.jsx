@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import EmployeeGrid from './employee/employeeGrid';  // 새로 import
 
 function App() {
