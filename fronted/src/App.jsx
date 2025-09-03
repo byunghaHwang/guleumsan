@@ -25,7 +25,7 @@ function App() {
             <Routes>
               <Route path="/" element={<MainPage />} />
               <Route path="/board" element={<Board />} />
-              <Route path="/employees" element={<EmployeeGrid />} /> {/* 직원관리 */}
+              <Route path="/employee" element={<EmployeeGrid />} /> {/* 직원관리 */}
             </Routes>
           </div>
         </div>
