@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-import EmployeeGrid from './employee/employeeGrid';  // 새로 import
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import HeaderPage from './home/headerPage';
+import FooterPage from './home/footerPage';
+import SideMenu from './home/sideMenu';
+import MainPage from './home/mainPage';
+import Board from './board/board';
+import EmployeeGrid from './employee/EmployeeGrid'; // 직원관리 추가
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -9,24 +16,22 @@ function App() {
   };
 
   return (
-    <>
-      <BrowserRouter>
-        <div className='layout'>
-          <HeaderPage toggleSidebar={toggleSidebar} />
-          <div className='body-content'>
-            <SideMenu isOpen={isSidebarOpen} />
-            <div className='main'>
-              <Routes>
-                <Route path="/" element={<MainPage />} />
-                <Route path="/board" element={<Board />} />
-                <Route path="/employee" element={<EmployeeGrid />} /> {/* 직원관리 */}
-              </Routes>
-            </div>
+    <BrowserRouter>
+      <div className="layout">
+        <HeaderPage toggleSidebar={toggleSidebar} />
+        <div className="body-content">
+          <SideMenu isOpen={isSidebarOpen} />
+          <div className="main">
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/board" element={<Board />} />
+              <Route path="/employees" element={<EmployeeGrid />} /> {/* 직원관리 */}
+            </Routes>
           </div>
-          <FooterPage />
         </div>
-      </BrowserRouter>
-    </>
+        <FooterPage />
+      </div>
+    </BrowserRouter>
   );
 }
 
