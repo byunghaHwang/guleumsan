@@ -10,7 +10,7 @@ import SideMenu from './home/sideMenu';
 import MainPage from './home/mainPage';
 
 import Board from './board/board';
-import EmployeeGrid from './employee/EmployeeGrid';
+import EmployeeGrid from './employee/employeeGrid';
 
 function App() {
 
