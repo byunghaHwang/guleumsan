@@ -11,21 +11,17 @@ function Board() {
 
   return (
     <>
-        <div classNames={'testSt'}>
+        <div className='title-area'>
             <h2>문의사항</h2>
         </div>
-        <div classNames={'testSt'}>
-            <button onClick={openModal}>팝업 열기</button>
-        </div>
-{/* bg-white p-4 rounded shadow mb-6 flex flex-col md:flex-row gap-4 items-center */}
-        <div className="bg-white p-4 rounded shadow mb-6 flex flex-col md:flex-row gap-4 items-center">
+        
+        <div className='filter-area'>
             <input
                 type="text"
-                placeholder="검색어 입력"
-                
-                
-                className="border border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
+                className="input-m"
             />
+
+            {/* className="border border-gray-300 rounded px-4 py-2 w-full md:w-1/3" */}
             <select
                 
                
@@ -36,6 +32,12 @@ function Board() {
                 <option value="design">디자인</option>
                 <option value="business">비즈니스</option>
             </select>
+            <button className='btn-m'>검색</button>
+        </div>
+
+
+        <div>
+            <button onClick={openModal}>팝업 열기</button>
         </div>
       
 

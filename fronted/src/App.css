@@ -5,15 +5,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 15px;
 }
 
 a{color: #080808;}
 
 body {
-  /* font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333; */
-
+    font-family: 'Segoe UI', sans-serif;
+    color: #080808;
     display: block;
     place-items: normal;
 }
@@ -54,7 +53,6 @@ body {
 
             /* 메뉴 제목 스타일 */
             .menu-title {
-                font-size: 15px;
                 cursor: pointer;
                 padding: 10px;
                 /* background-color: #ffffff; */
