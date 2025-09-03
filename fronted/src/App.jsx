@@ -1,4 +1,4 @@
-import EmployeeGrid from './employee/EmployeeGrid';  // 새로 import
+import EmployeeGrid from './employee/employeeGrid';  // 새로 import
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
