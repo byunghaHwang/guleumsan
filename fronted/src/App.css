@@ -40,8 +40,8 @@ body {
     width: 200px;
     background-color: #f4f4f4;
     padding: 1rem;
-    transform: translateX(0);
-    transition: all 1s;
+    /* transform: translateX(0%);
+    transition: all 1s; */
 
     .showSide{display: none;}
 
@@ -54,7 +54,7 @@ body {
 
             /* 메뉴 제목 스타일 */
             .menu-title {
-                font-size: 18px;
+                font-size: 15px;
                 cursor: pointer;
                 padding: 10px;
                 /* background-color: #ffffff; */
@@ -107,14 +107,15 @@ body {
 
 .sideOpen {
     width: 0px;
-    transition: all 1s;
-    transform: translateX(-100%);
+    /* transition: all 1s;
+    transform: translateX(0%); */
 }
 
 
 /* 본문 */
 .main {
     min-height: calc(100vh - 180px);
+    width: 100%;
 }
 
 /* 푸터 */
