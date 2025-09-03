@@ -1,38 +1,47 @@
+import './App.css'
+
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import HeaderPage from './home/headerPage';
 import FooterPage from './home/footerPage';
 import SideMenu from './home/sideMenu';
+
 import MainPage from './home/mainPage';
+
 import Board from './board/board';
-import EmployeeGrid from './employee/employeeGrid'; // 직원관리 추가
+import EmployeeGrid from './employee/EmployeeGrid';
 
 function App() {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!isSidebarOpen);
-  };
+    const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setSidebarOpen(!isSidebarOpen);
+    };
 
   return (
-    <BrowserRouter>
-      <div className="layout">
-        <HeaderPage toggleSidebar={toggleSidebar} />
-        <div className="body-content">
-          <SideMenu isOpen={isSidebarOpen} />
-          <div className="main">
-            <Routes>
-              <Route path="/" element={<MainPage />} />
-              <Route path="/board" element={<Board />} />
-              <Route path="/employee" element={<EmployeeGrid />} /> {/* 직원관리 */}
-            </Routes>
-          </div>
-        </div>
-        <FooterPage />
-      </div>
-    </BrowserRouter>
-  );
+    <>
+        <BrowserRouter>
+            <div className='layout'>
+                <HeaderPage toggleSidebar={toggleSidebar} />
+                <div className='body-content'>
+                    <SideMenu isOpen={isSidebarOpen} />
+                    <div className='main'>
+                        <Routes>
+                            <Route path="/" element={<MainPage />} />
+                            <Route path="/board" element={<Board />} />
+                            <Route path="/employee" element={<EmployeeGrid />} />
+                        </Routes>
+                    </div>
+                </div>
+                {/* 화면전환 영역 */}
+                <FooterPage/>
+            </div>
+        </BrowserRouter>
+        
+    </>
+  )
 }
 
 export default App;
