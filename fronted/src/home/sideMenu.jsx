@@ -51,6 +51,7 @@ function SideMenu({isOpen}){
                                 <li>급여기초정보입력</li>
                                 <li>급여자료입력</li>
                                 <li>급여대장</li>
+                                <li>인센티브 관리</li>
                             </ul>
                         </li>
 
@@ -68,14 +69,9 @@ function SideMenu({isOpen}){
 
                         {/* 메뉴 4 */}
                         <li className="menu-item">
-                            <span className="menu-title" onClick={() => toggleMenu(4)}>
-                                시스템설정
+                            <span className="menu-title">
+                                공지사항
                             </span>
-                            <ul className={`submenu ${openMenu === 4 ? 'show' : ''}`}>
-                                <li>시스템 관리</li>
-                                <li>공지사항 관리</li>
-                                <li>인센티브 관리</li>
-                            </ul>
                         </li>
 
                         {/* 메뉴 5 */}

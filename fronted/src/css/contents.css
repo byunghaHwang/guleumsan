@@ -8,18 +8,38 @@
 }
 
 .filter-area{
-    padding: 10px 10px;
+    padding: 20px 10px;
     position: relative;
     width: 100%;
     border-radius: 8px;
     border: 1px solid #fff;
     box-shadow: 3px 3px 3px 3px #ebebe7;
     background: #f5f5f5;
+
+
+    .filt-grp{
+        display: inline-block;
+        padding: 0px 50px;
+
+        .filt-tit{
+            position: relative;
+            right: 20px;
+        }
+    }
 }
 
 
 .input-m {
     height: 30px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+.select-m {
+    height: 30px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    min-width: 200px;
 }
 
 .btn-m{
@@ -35,4 +55,11 @@
     height: 35px;
     background-color: #adb0f7;
 
+}
+
+
+.grid_area{
+    margin-top: 5px;
+    padding: 0px 10px;
+    position: relative;
 }
