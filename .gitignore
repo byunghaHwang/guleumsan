@@ -36,6 +36,9 @@ build/
 .vscode/
 
 # Node / Vite / React
+# Node (루트에는 혹시 생겨도 커밋 방지)
+package-lock.json
+package.json
 node_modules/
 dist/
 .vite/
